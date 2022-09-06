@@ -14,7 +14,7 @@ public abstract class AbstractDAO<T> {
 
     public AbstractDAO() {
         emf = Persistence
-                .createEntityManagerFactory("conexaoPU");
+                .createEntityManagerFactory("heranca-joinedPU");
     }
 
     protected EntityManager getEntityManager() {

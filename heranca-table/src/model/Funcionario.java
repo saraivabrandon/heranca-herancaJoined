@@ -18,7 +18,7 @@ import javax.persistence.Table;
 @Table(name = "funcionario")
 @DiscriminatorValue(value = "FUNCIONARIO")
 public class Funcionario extends Pessoa {
-    @Column(name = "salario", precision = 8, scale = 2)
+    @Column(name = "salario", precision = 8, scale = 2, nullable = false)
     private BigDecimal salario;
 
     public BigDecimal getSalario() {
