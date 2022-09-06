@@ -6,7 +6,6 @@ package model;
 
 import java.io.Serializable;
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,8 +20,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "pessoa")
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorValue(value = "PESSOA")
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Pessoa implements Serializable{
     @Id 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
