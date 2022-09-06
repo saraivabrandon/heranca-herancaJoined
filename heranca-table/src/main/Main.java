@@ -5,10 +5,8 @@
 package main;
 
 import dao.FuncionarioDAO;
-import dao.PessoaDAO;
 import java.math.BigDecimal;
 import model.Funcionario;
-import model.Pessoa;
 
 /**
  *
